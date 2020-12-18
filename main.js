@@ -1,6 +1,25 @@
-
+import { CountUp } from './js/countUp.min.js';
 
 window.onload = function () {
+    readTextFile("files/quick_data.json", function(text){
+        var data = JSON.parse(text);
+        
+        document.getElementById('last-updated').innerText = 'Last Updated: ' + data.updated;
+
+        let totalTested = data.totalTested;
+        document.getElementById('total-tested').innerText = totalTested;
+        let totalPUI = data.totalPUI;
+        document.getElementById('total-pui').innerText = totalPUI;
+        let labConfirmed = data.labConfirmed;
+        document.getElementById('lab-confirmed').innerText = labConfirmed;
+        let deathsLabConfirmed = data.deathsLabConfirmed;
+        document.getElementById('deaths').innerText = deathsLabConfirmed;
+        let recovered = data.recovered;
+        document.getElementById('recovered').innerText = recovered;
+        console.log("Updated Quick Facts.")
+
+        countUpQuickFactsNumbers(totalTested, totalPUI, labConfirmed, deathsLabConfirmed, recovered);
+    });
     //setTimeout(removeLoaders,3000);
     setTimeout(resizeGraphs, 2500);
     //setTimeout(showGraphs, 3000);
@@ -25,4 +44,16 @@ function resizeGraphs() {
 function removeLoaders() {
     let loader = document.getElementById("loader0");
     loader.remove();
+}
+
+function readTextFile(file, callback) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.overrideMimeType("application/json");
+    rawFile.open("GET", file, true);
+    rawFile.onreadystatechange = function() {
+        if (rawFile.readyState === 4 && rawFile.status == "200") {
+            callback(rawFile.responseText);
+        }
+    }
+    rawFile.send(null);
 }

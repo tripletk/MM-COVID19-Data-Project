@@ -34,8 +34,39 @@
 </head>
 
 <body>
-
-
+    <div class="quick-facts-container">
+        <div class="card text-center" style="width: 100%; height: 100%; max-width: 1540px; max-height: fit-content;">
+            <div class="card-body" style="max-width: 1540px; min-width: 500px;">
+              <h5 class="card-title">Quick Facts</h5>
+              <p id="last-updated">Last Updated: </p>
+              <div class="quick-facts">
+                  <div class="quick-fact">
+                    <h6 class="card-subtitle mb-2 text-muted">Total Tested</h6>
+                    <p class="card-text" id="total-tested">123456</p>
+                  </div>
+                  <div class="quick-fact">
+                    <h6 class="card-subtitle mb-2 text-muted">Total PUI</h6>
+                    <p class="card-text" id="total-pui">123456</p>
+                  </div>
+                  <div class="quick-fact">
+                    <h6 class="card-subtitle mb-2 text-muted">Lab Confirmed</h6>
+                    <p class="card-text" id="lab-confirmed">123456</p>
+                  </div>
+                  <div class="quick-fact">
+                    <h6 class="card-subtitle mb-2 text-muted">Deaths</h6>
+                    <p class="card-text" id="deaths">123456</p>
+                  </div>
+                  <div class="quick-fact">
+                    <h6 class="card-subtitle mb-2 text-muted">Recovered</h6>
+                    <p class="card-text" id="recovered">123456</p>
+                  </div>
+                
+              </div>
+              
+            </div>
+          </div>
+    </div>
+    
     <!-- Content -->
     <div class="main">
         <!-- <div class="card">
@@ -339,7 +370,7 @@
             $("#welcomeModal").modal('show');
         });
     </script>
-    <script src="main.js"></script>
+    <script src="main.js" type="module"></script>
 </body>
 
 </html>

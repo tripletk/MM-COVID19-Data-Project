@@ -10,3 +10,21 @@
     height: 500px;
     margin: 10px;
 }
+
+.quick-facts-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.quick-facts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.quick-fact {
+    width: 150px;
+}
