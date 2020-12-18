@@ -106,6 +106,11 @@
                     <ul class="dropdown-menu dropdown-menu-lg-end">
                         <!-- Dropdown menu links -->
                         <li>
+                            <button type="button" class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#sourcesModal">
+                                Sources
+                              </button> 
+                        </li>
+                        <li>
                             <button type="button" class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#contributeModal">
                                 Contribute
                               </button> 
@@ -115,6 +120,7 @@
                                 Support
                               </button> 
                         </li>
+                        
                         <li><hr class="dropdown-divider"></li>
                         <li>
                             <button type="button" class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#reportModal">
@@ -142,6 +148,35 @@
                         Sports is the single source of all COVID-19 data in the country. Simple stats and an amazing
                         ARCgis dashboard are provided on its site however, they are not easily accesible by the public.
                         And so I put together this simplified and visual data project to provide an insight to everyone.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sources Modal -->
+    <div class="modal fade in" id="sourcesModal" tabindex="-1" aria-labelledby="sourcesModalLabel" aria-hidden="true;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sourcesModalLabel">Sources</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        The main data is compiled from the JHU CSSE COVID-19 Data. This data is corroborated with Myanmar MoHS's data. We are looking to develop our own API and data bank in the future.
+                    </p>
+                    <p>
+                        COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University (JHU). Source <a href="https://github.com/CSSEGISandData/COVID-19">here</a>.
+                    </p>
+                    <p>
+                        Ministry of Health and Sports (MoHS), Myanmar. Source <a href="https://mohs.gov.mm/content/publication/2019-ncov">here</a>.
+                    </p>
+                    <p>
+                        Myanmar Fight Covid19 by UMG. Source <a href="https://myanmarfightcovid19.com/covidAnalysis">here</a>.
                     </p>
                 </div>
                 <div class="modal-footer">
