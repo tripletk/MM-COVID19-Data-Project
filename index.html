@@ -19,43 +19,19 @@
 </head>
 
 <body>
-    <!-- Modal -->
-    <div class="modal fade in" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true;">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="welcomeModalLabel">Welcome to the MM COVID-19 Data Project</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Hi. My name is Timmy Kyaw, the developer of this project. I observed the lack of statistics and
-                        analysis regarding COVID-19 data in Myanmar. Everyday, the cases are still rising yet people are
-                        unaware of the severity of the situation. While trying to find graphs and nurmerical numbers of
-                        day by day COVID-19 statistics, I was unable to find them. The Myanmar Ministry of Health and
-                        Sports is the single source of all COVID-19 data in the country. Simple stats and an amazing
-                        ARCgis dashboard are provided on its site however, they are not easily accesible by the public.
-                        And so I put together this simplified and visual data project to provide an insight to everyone.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <!-- Content -->
     <div class="main">
-        <div class="card">
+        <!-- <div class="card">
             <div class="card-header">
                 Quick Stats
             </div>
             <div class="card-body">
-                
+
             </div>
-        </div>
-        
+        </div> -->
+
         <div class="card">
             <div class="card-header">
                 Lab Confirmed Cases
@@ -66,22 +42,6 @@
                 </div> -->
                 <div id="charts-area">
                     <div id="chart0" class="chart0"></div>
-                    <!-- <div class="chart"></div>
-                    <script type="module">
-                        import {
-                            Runtime,
-                            Inspector,
-                            Library
-                        } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-    
-                        const runtime = new Runtime(Object.assign(new Library, {
-                            width: 498
-                        }));
-                        import define from "https://api.observablehq.com/d/1adf72a9a09835c3.js?v=3";
-                        const main = runtime.module(define, name => {
-                            if (name === "chart") return Inspector.into(".chart")();
-                        });
-                    </script> -->
                 </div>
             </div>
         </div>
@@ -97,7 +57,7 @@
             <div class="card-header">
                 Recovered
             </div>
-            <div class="card-body"  style="padding: 0px;">
+            <div class="card-body" style="padding: 0px;">
                 <div id="chart2" class="chart2"></div>
             </div>
         </div>
@@ -137,8 +97,130 @@
                     <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">by Timmy Kyaw</a> -->
                 </li>
             </ul>
+            <form clas="d-flex">
+                <!-- Default dropup button -->
+                <div class="btn-group dropup">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Learn More
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-lg-end">
+                        <!-- Dropdown menu links -->
+                        <li>
+                            <button type="button" class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#contributeModal">
+                                Contribute
+                              </button> 
+                        </li>
+                        <li>
+                            <button type="button" class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#supportModal">
+                                Support
+                              </button> 
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <button type="button" class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#reportModal">
+                                Report Bug
+                              </button> 
+                        </li>
+                    </ul>
+                </div>
+            </form>
         </div>
     </nav>
+    <!-- Welcome Modal -->
+    <div class="modal fade in" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="welcomeModalLabel">Welcome to the MM COVID-19 Data Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Hi. My name is Timmy Kyaw, the developer of this project. I observed the lack of statistics and
+                        analysis regarding COVID-19 data in Myanmar. Everyday, the cases are still rising yet people are
+                        unaware of the severity of the situation. While trying to find graphs and nurmerical numbers of
+                        day by day COVID-19 statistics, I was unable to find them. The Myanmar Ministry of Health and
+                        Sports is the single source of all COVID-19 data in the country. Simple stats and an amazing
+                        ARCgis dashboard are provided on its site however, they are not easily accesible by the public.
+                        And so I put together this simplified and visual data project to provide an insight to everyone.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contribute Modal -->
+    <div class="modal fade in" id="contributeModal" tabindex="-1" aria-labelledby="contributeModalLabel" aria-hidden="true;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contributeModalLabel">Contribute</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Anyone is welcome to contribute! Please contact me via email at timmytseng1999@gmail.com or <a
+                            href="https://www.facebook.com/timmytripletktseng">via FB messenger</a>. You can learn more
+                        about the technicals of this project on <a
+                            href="https://github.com/tripletk/MM-COVID19-Data-Project">Github</a>. We are currently
+                        looking for Web developers specializing in Burmese Unicode, D3.js developers, and translators.
+                        Volunteers for any other help are also recommended to reach out!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Support Modal -->
+    <div class="modal fade in" id="supportModal" tabindex="-1" aria-labelledby="supportModalLabel" aria-hidden="true;">
+        <div class="modal-dialog">r
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="supportModalLabel">Support</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>You can support this project by sharing it with your friends, family and network. Feel free to
+                        reference/cite the data and graphs for any use. Please contact Timmy Kyaw via email at
+                        timmytseng1999@gmail.com or <a href="https://www.facebook.com/timmytripletktseng">via FB
+                            messenger</a> to find out how you can give credit.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Report Modal -->
+    <div class="modal fade in" id="reportModal" tabindex="-1" aria-labelledby="reportModalLabel" aria-hidden="true;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="reportModalLabel">Support</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                      
+                      <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Message:</label>
+                        <textarea class="form-control" id="message-text"></textarea>
+                      </div>
+                    </form>
+                  </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                  </div>
+            </div>
+        </div>
+    </div>
     <script type="module">
         import define from "./d3/index.js";
         import {
@@ -148,7 +230,7 @@
         } from "./d3/runtime.js";
 
         const runtime = new Runtime(Object.assign(new Library, {
-            width:  510
+            width: 510
         }));
         const main = runtime.module(define, name => {
             if (name === "chart0") return Inspector.into(".chart0")();
