@@ -24,7 +24,6 @@
 </head>
 
 <body>
-    
 
 
     <!-- Content -->
@@ -53,7 +52,7 @@
         </div>
         <div class="card">
             <div class="card-header">
-                Deaths ပိုးတွေ့သေဆုံးလူနာ 
+                Deaths ပိုးတွေ့သေဆုံးလူနာ
             </div>
             <div class="card-body" style="padding: 0px;">
                 <div id="chart1" class="chart1"></div>
@@ -106,32 +105,45 @@
             <form clas="d-flex">
                 <!-- Default dropup button -->
                 <div class="btn-group dropup">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
                         Learn More
                     </button>
                     <ul class="dropdown-menu dropdown-menu-lg-end">
                         <!-- Dropdown menu links -->
                         <li>
-                            <button type="button" class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#sourcesModal">
+                            <button type="button" class="dropdown-item" type="button" data-bs-toggle="modal"
+                                data-bs-target="#sourcesModal">
                                 Sources
-                              </button> 
+                            </button>
                         </li>
                         <li>
-                            <button type="button" class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#contributeModal">
+                            <button type="button" class="dropdown-item" type="button" data-bs-toggle="modal"
+                                data-bs-target="#teamModal">
+                                The Team
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="dropdown-item" type="button" data-bs-toggle="modal"
+                                data-bs-target="#contributeModal">
                                 Contribute
-                              </button> 
+                            </button>
                         </li>
                         <li>
-                            <button type="button" class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#supportModal">
+                            <button type="button" class="dropdown-item" type="button" data-bs-toggle="modal"
+                                data-bs-target="#supportModal">
                                 Support
-                              </button> 
+                            </button>
                         </li>
-                        
-                        <li><hr class="dropdown-divider"></li>
+
                         <li>
-                            <button type="button" class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#reportModal">
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <button type="button" class="dropdown-item" type="button" data-bs-toggle="modal"
+                                data-bs-target="#reportModal">
                                 Report a bug
-                              </button> 
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -196,8 +208,36 @@
             </div>
         </div>
     </div>
+    <!-- Team Modal -->
+    <div class="modal fade in" id="teamModal" tabindex="-1" aria-labelledby="teamModalLabel" aria-hidden="true;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="teamModalLabel">The Team</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Currently, the MM COVID-19 Data Project is a one man team. This is a fullstack development by
+                        Burmese Computer Science student Timmy Kyaw who wanted to use his knowledge and skills for
+                        societal good. The team is looking to expand! See the contribute section to learn more.
+                    </p>
+                    <p>
+                        Lead Fullstack Developer - Timmy Kyaw
+                        (Other Names: Kaung Khant Kyaw, Timmy Tseng)
+                        Computer Science student at Pepperdine University, CA, USA
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Contribute Modal -->
-    <div class="modal fade in" id="contributeModal" tabindex="-1" aria-labelledby="contributeModalLabel" aria-hidden="true;">
+    <div class="modal fade in" id="contributeModal" tabindex="-1" aria-labelledby="contributeModalLabel"
+        aria-hidden="true;">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -252,17 +292,17 @@
                 </div>
                 <div class="modal-body">
                     <form>
-                      
-                      <div class="mb-3">
-                        <label for="message-text" class="col-form-label">Message:</label>
-                        <textarea class="form-control" id="message-text"></textarea>
-                      </div>
+
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
                     </form>
-                  </div>
+                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Send message</button>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
