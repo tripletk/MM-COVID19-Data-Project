@@ -60,7 +60,7 @@
             <div class="card-header">
                 Lab Confirmed Cases
             </div>
-            <div class="card-body">
+            <div class="card-body" style="padding: 0px;">
                 <!-- <div id="loader0" class="loading-wrapper d-flex align-items-center justify-content-center" style="display: none">
                     <div class="loading-bar"></div>
                 </div> -->
@@ -89,7 +89,7 @@
             <div class="card-header">
                 Deaths
             </div>
-            <div class="card-body">
+            <div class="card-body" style="padding: 0px;">
                 <div id="chart1" class="chart1"></div>
             </div>
         </div>
@@ -97,7 +97,7 @@
             <div class="card-header">
                 Recovered
             </div>
-            <div class="card-body">
+            <div class="card-body"  style="padding: 0px;">
                 <div id="chart2" class="chart2"></div>
             </div>
         </div>
@@ -105,28 +105,30 @@
             <div class="card-header">
                 Active Cases
             </div>
-            <div class="card-body">
-                
+            <div class="card-body" style="padding: 0px;">
+                <div id="chart3" class="chart3"></div>
             </div>
         </div>
         <div class="card">
             <div class="card-header">
                 Incident Rate
             </div>
-            <div class="card-body">
-                
+            <div class="card-body" style="padding: 0px;">
+                <div id="chart4" class="chart4"></div>
             </div>
         </div>
         <div class="card">
             <div class="card-header">
                 Case Fatality Ratio
             </div>
-            <div class="card-body">
-                
+            <div class="card-body" style="padding: 0px;">
+                <div id="chart5" class="chart5"></div>
             </div>
         </div>
     </div>
+    <div style="width: 100%; height: 56px;">
 
+    </div>
     <nav class="navbar fixed-bottom navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">MM COVID-19 Data Project</a>
@@ -146,12 +148,15 @@
         } from "./d3/runtime.js";
 
         const runtime = new Runtime(Object.assign(new Library, {
-            //width:  chartWidth()/2
+            width:  510
         }));
         const main = runtime.module(define, name => {
             if (name === "chart0") return Inspector.into(".chart0")();
             if (name === "chart1") return Inspector.into(".chart1")();
             if (name === "chart2") return Inspector.into(".chart2")();
+            if (name === "chart3") return Inspector.into(".chart3")();
+            if (name === "chart4") return Inspector.into(".chart4")();
+            if (name === "chart5") return Inspector.into(".chart5")();
         });
     </script>
     <script>
