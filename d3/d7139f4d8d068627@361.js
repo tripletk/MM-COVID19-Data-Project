@@ -91,12 +91,12 @@ export default function define(runtime, observer) {
   });
   main.variable(observer("data0")).define("data0", ["d3", "FileAttachment"], async function (d3, FileAttachment) {
     return (
-      Object.assign(d3.csvParse(await FileAttachment("confirmed_data@3.csv").text(), d3.autoType).map(({
+      Object.assign(d3.csvParse(await FileAttachment("compiled_data.csv").text(), d3.autoType).map(({
         date,
-        cases
+        confirmedCases
       }) => ({
         date,
-        value: cases
+        value: confirmedCases
       })), {
         y: "Lab Confirmed Cases"
       })
