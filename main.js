@@ -26,6 +26,26 @@ window.onload = function () {
     
 }
 
+function countUpQuickFactsNumbers(a, b, c, d, e) {
+    const options = {
+          duration: 5,
+    };
+    var countUpA = new CountUp('total-tested', a, options);
+    countUpA.start();
+
+    var countUpB = new CountUp('total-pui', b, options);
+    countUpB.start();
+
+    var countUpC = new CountUp('lab-confirmed', c, options);
+    countUpC.start();
+
+    var countUpD = new CountUp('deaths', d, options);
+    countUpD.start();
+
+    var countUpE = new CountUp('recovered', e, options);
+    countUpE.start();
+}
+
 function showGraphs() {
     let chart0 = document.getElementById("charts-area");
     chart0.style.display = "block";
