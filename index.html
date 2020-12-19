@@ -5,7 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MM CoV-19 Data Project</title>
-    <meta name="description" content="A clear data visualization platform for Myanmar COVID-19 trends and statistics."/>
+    <meta name="description" content="A clear data visualization platform for Myanmar COVID-19 trends and statistics.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mmcov19data.org/">
+    <meta property="og:title" content="MM CoV-19 Data Project">
+    <meta property="og:description"
+        content="A clear data visualization platform for Myanmar COVID-19 trends and statistics.">
+    <meta property="og:image" content="images/meta.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mmcov19data.org/">
+    <meta property="twitter:title" content="MM CoV-19 Data Project">
+    <meta property="twitter:description"
+        content="A clear data visualization platform for Myanmar COVID-19 trends and statistics.">
+    <meta property="twitter:image" content="images/meta.jpg">
+
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -26,6 +43,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLCDC0MNR2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
+
         function gtag() {
             dataLayer.push(arguments);
         }
@@ -38,36 +56,36 @@
     <div class="quick-facts-container">
         <div class="card text-center" style="width: 100%; height: 100%; max-width: 1540px; max-height: fit-content;">
             <div class="card-body" style="max-width: 1540px; min-width: 500px;">
-              <h5 class="card-title">Quick Facts</h5>
-              <p id="last-updated">Last Updated: </p>
-              <div class="quick-facts">
-                  <div class="quick-fact">
-                    <h6 class="card-subtitle mb-2 text-muted">Total Tested ဓာတ်ခွဲစစ်ဆေးသူစုစုပေါင်း</h6>
-                    <p class="card-text" id="total-tested">123456</p>
-                  </div>
-                  <div class="quick-fact">
-                    <h6 class="card-subtitle mb-2 text-muted">Total PUI စောင့်ကြည့်လူနာစုစုပေါင်း</h6>
-                    <p class="card-text" id="total-pui">123456</p>
-                  </div>
-                  <div class="quick-fact">
-                    <h6 class="card-subtitle mb-2 text-muted">Lab Confirmed ပိုးတွေ့ </h6>
-                    <p class="card-text" id="lab-confirmed">123456</p>
-                  </div>
-                  <div class="quick-fact">
-                    <h6 class="card-subtitle mb-2 text-muted">Deaths ပိုးတွေ့သေဆုံးလူနာ</h6>
-                    <p class="card-text" id="deaths">123456</p>
-                  </div>
-                  <div class="quick-fact">
-                    <h6 class="card-subtitle mb-2 text-muted">Recovered ပိုးတွေ့ပြန်လည်သက်သာ</h6>
-                    <p class="card-text" id="recovered">123456</p>
-                  </div>
-                
-              </div>
-              
+                <h5 class="card-title">Quick Facts</h5>
+                <p id="last-updated">Last Updated: </p>
+                <div class="quick-facts">
+                    <div class="quick-fact">
+                        <h6 class="card-subtitle mb-2 text-muted">Total Tested ဓာတ်ခွဲစစ်ဆေးသူစုစုပေါင်း</h6>
+                        <p class="card-text" id="total-tested">123456</p>
+                    </div>
+                    <div class="quick-fact">
+                        <h6 class="card-subtitle mb-2 text-muted">Total PUI စောင့်ကြည့်လူနာစုစုပေါင်း</h6>
+                        <p class="card-text" id="total-pui">123456</p>
+                    </div>
+                    <div class="quick-fact">
+                        <h6 class="card-subtitle mb-2 text-muted">Lab Confirmed ပိုးတွေ့ </h6>
+                        <p class="card-text" id="lab-confirmed">123456</p>
+                    </div>
+                    <div class="quick-fact">
+                        <h6 class="card-subtitle mb-2 text-muted">Deaths ပိုးတွေ့သေဆုံးလူနာ</h6>
+                        <p class="card-text" id="deaths">123456</p>
+                    </div>
+                    <div class="quick-fact">
+                        <h6 class="card-subtitle mb-2 text-muted">Recovered ပိုးတွေ့ပြန်လည်သက်သာ</h6>
+                        <p class="card-text" id="recovered">123456</p>
+                    </div>
+
+                </div>
+
             </div>
-          </div>
+        </div>
     </div>
-    
+
     <!-- Content -->
     <div class="main">
         <!-- <div class="card">
@@ -239,7 +257,7 @@
                             href="https://mohs.gov.mm/content/publication/2019-ncov">here</a>.
                         The MoHS sources are Myanmar's Central Epidemiology Unit and the Department of Public Health.
                     </p>
-                    
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -342,7 +360,10 @@
                 <div class="modal-footer">
                     <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary"><a href="mailto:timmytseng1999@gmail.com?subject=MMCov19data.org%20Bug%20Report&body=Hi%20Timmy%20Kyaw%2C%0D%0A%0D%0A">Send Message</a></button> -->
-                        <p>Currently, our report bug feature is a WIP, we are working hard to get this up. We would still appreciate your input so please email us at <a href="mailto:timmytseng1999@gmail.com?subject=MMCov19data.org%20Bug%20Report&body=Hi%20Timmy%20Kyaw%2C%0D%0A%0D%0A">timmytseng1999@gmail.com</a>.</p>
+                    <p>Currently, our report bug feature is a WIP, we are working hard to get this up. We would still
+                        appreciate your input so please email us at <a
+                            href="mailto:timmytseng1999@gmail.com?subject=MMCov19data.org%20Bug%20Report&body=Hi%20Timmy%20Kyaw%2C%0D%0A%0D%0A">timmytseng1999@gmail.com</a>.
+                    </p>
                 </div>
             </div>
         </div>
