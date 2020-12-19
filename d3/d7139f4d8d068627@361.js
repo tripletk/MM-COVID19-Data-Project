@@ -661,7 +661,7 @@ export default function define(runtime, observer) {
 
       tooltip
         .attr("transform", `translate(${x4(date)},${y4(value)})`)
-        .call(callout4, `${value} percent
+        .call(callout4, `${value} cases
                         ${formatDate(date)}`);
     });
 
